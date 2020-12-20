@@ -1,0 +1,32 @@
+Configuring and building Thirdparty/DBoW2 ...
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /usr/stud/linp/storage/user/linp/DynaSLAM/Thirdparty/DBoW2/build
+[100%] Built target DBoW2
+Configuring and building Thirdparty/g2o ...
+-- BUILD TYPE:Release
+-- Compiling on Unix
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /usr/stud/linp/storage/user/linp/DynaSLAM/Thirdparty/g2o/build
+[100%] Built target g2o
+Uncompress vocabulary ...
+Configuring and building DynaSLAM ...
+-- Using flag -std=c++11.
+-- Boost version: 1.65.1
+-- Found the following Boost libraries:
+--   thread
+--   chrono
+--   system
+--   date_time
+--   atomic
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /usr/stud/linp/storage/user/linp/DynaSLAM/build
+[ 74%] Built target DynaSLAM
+CMakeFiles/Makefile2:104: recipe for target 'CMakeFiles/mono_carla.dir/all' failed
+[ 80%] Built target mono_kitti
+[ 87%] Built target rgbd_tum
+[ 93%] Built target mono_tum
+[100%] Built target stereo_kitti
+Makefile:83: recipe for target 'all' failed
