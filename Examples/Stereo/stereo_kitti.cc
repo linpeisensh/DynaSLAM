@@ -92,7 +92,7 @@ int main(int argc, char **argv)
         int w = imLeft.cols;
         cv::Mat maskRight = cv::Mat::ones(h,w,CV_8U);
         cv::Mat maskLeft = cv::Mat::ones(h,w,CV_8U);
-
+	std::cout << ni << std::endl;
         // Segment out the images
         if (argc == 5){
             cv::Mat maskLeftRCNN, maskRightRCNN;
