@@ -109,7 +109,6 @@ int main(int argc, char **argv)
             maskLeft = maskLeft - maskLeftRCNNdil;
             if (ni == 1){
                 cv::imwrite("clm.png",maskLeftRCNN);
-                break;
             }
             cv::Mat maskRightRCNNdil = maskRightRCNN.clone();
             cv::dilate(maskRightRCNN, maskRightRCNNdil, kernel);
