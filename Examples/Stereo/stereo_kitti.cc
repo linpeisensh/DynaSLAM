@@ -107,12 +107,12 @@ int main(int argc, char **argv)
                 cv::imwrite("clmd.png",maskLeftRCNNdil);
             }
             maskLeft = maskLeft - maskLeftRCNNdil;
-            if (ni == 1){
-                cv::imwrite("clm.png",maskLeftRCNN);
-            }
             cv::Mat maskRightRCNNdil = maskRightRCNN.clone();
             cv::dilate(maskRightRCNN, maskRightRCNNdil, kernel);
             maskRight = maskRight - maskRightRCNNdil;
+            if (ni == 1){
+                cv::imwrite("clm.png",maskLeftRCNN);
+            }
         }
 
         // Pass the images to the SLAM system
