@@ -102,15 +102,7 @@ int main(int argc, char **argv)
                     vstrImageRight[ni].replace(vstrImageRight[ni].begin(), vstrImageRight[ni].end() - 10,""));
             cv::Mat maskLeftRCNNdil = maskLeftRCNN.clone();
             cv::dilate(maskLeftRCNN, maskLeftRCNNdil, kernel);
-            if (ni == 1){
-                cv::imwrite("clmb.png",maskLeftRCNN);
-                cv::imwrite("clmd.png",maskLeftRCNNdil);
-            }
             maskLeft = maskLeft - maskLeftRCNNdil;
-            if (ni == 1){
-                cv::imwrite("clm.png",maskLeftRCNN);
-                break;
-            }
             cv::Mat maskRightRCNNdil = maskRightRCNN.clone();
             cv::dilate(maskRightRCNN, maskRightRCNNdil, kernel);
             maskRight = maskRight - maskRightRCNNdil;
