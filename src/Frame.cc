@@ -72,12 +72,12 @@ Frame::Frame(const cv::Mat &imLeft, const cv::Mat &imRight, const cv::Mat &maskL
     // Delete those ORB points that fall in Mask borders (Included by Berta)
     cv::Mat MaskLeft_dil = maskLeft.clone();
     cv::Mat MaskRight_dil = maskRight.clone();
-//    int dilation_size = 15;
-//    cv::Mat kernel = getStructuringElement(cv::MORPH_ELLIPSE,
-//                                        cv::Size( 2*dilation_size + 1, 2*dilation_size+1 ),
-//                                        cv::Point( dilation_size, dilation_size ) );
-//    cv::erode(maskLeft, MaskLeft_dil, kernel);
-//    cv::erode(maskRight, MaskRight_dil, kernel);
+    int dilation_size = 15;
+    cv::Mat kernel = getStructuringElement(cv::MORPH_ELLIPSE,
+                                        cv::Size( 2*dilation_size + 1, 2*dilation_size+1 ),
+                                        cv::Point( dilation_size, dilation_size ) );
+    cv::erode(maskLeft, MaskLeft_dil, kernel);
+    cv::erode(maskRight, MaskRight_dil, kernel);
 
     if(mvKeys.empty())
         return;
