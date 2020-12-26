@@ -41,14 +41,15 @@ SegmentDynObject::SegmentDynObject(){
     this->py_module = PyImport_ImportModule(this->module_name.c_str());
     assert(this->py_module != NULL);
     std::cout << this->class_name.c_str() << std::endl;
-    this->py_class = PyObject_GetAttrString(this->py_module, this->class_name.c_str());
-    bool ans = this->py_class != NULL;
-    std::cout << ans << std::endl;
+    PyObject* pyDict = PyModule_GetDict(this->py_module);
+    this->py_class = PyDict_GetItemString(pyDict, this->class_name.c_str());
+//    this->py_class = PyObject_GetAttrString(this->py_module, this->class_name.c_str());
+    std::cout << "1!" << std::endl;
     assert(this->py_class != NULL);
-    std::cout << "hello world!" << std::endl;
-    this->net = PyInstance_New(this->py_class, NULL, NULL);
-    bool res = this->net != NULL;
-    std::cout << res << std::endl;
+    std::cout << "2" << std::endl;
+//    this->net = PyInstance_New(this->py_class, NULL, NULL);
+    this->net = PyInstanceMethod_New(this->py_class);
+    std::cout << "3" << std::endl;
     assert(this->net != NULL);
     std::cout << "Creating net instance..." << std::endl;
     cv::Mat image  = cv::Mat::zeros(480,640,CV_8UC3); //Be careful with size!!
