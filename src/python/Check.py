@@ -11,6 +11,9 @@ import coco
 import utils
 import model as modellib
 
+from maskrcnn_benchmark.config import cfg
+from demo.predictor import COCODemo
+
 print('Initializing Mask RCNN network...')
 # Root directory of the project
 ROOT_DIR = os.getcwd()
@@ -55,87 +58,106 @@ class_names = ['BG', 'person', 'bicycle', 'car', 'motorcycle', 'airplane',
        'teddy bear', 'hair drier', 'toothbrush']
 print('Initialated Mask RCNN network...')
 
-def GetDynSeg(image,image2=None):
-	h = image.shape[0]
-	w = image.shape[1]
-	if len(image.shape) == 2:
-		im = np.zeros((h,w,3))
-		im[:,:,0]=image
-		im[:,:,1]=image
-		im[:,:,2]=image
-		image = im
-	#if image2 is not None:
-	#	args+=[image2]
-	# Run detection
-	results = model.detect([image], verbose=0)
-	# Visualize results
-	r = results[0]
-	i = 0
-	mask = np.zeros((h,w))
-	for roi in r['rois']:
-		if class_names[r['class_ids'][i]] == 'person':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'bicycle':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'car':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'motorcycle':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'airplane':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'bus':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'train':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'truck':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'boat':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'bird':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'cat':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'dog':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'horse':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'sheep':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'cow':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'elephant':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'bear':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'zebra':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.
-		if class_names[r['class_ids'][i]] == 'giraffe':
-			image_m = r['masks'][:,:,i]
-			mask[image_m == 1] = 1.		
-		i+=1
-	#print('GetSeg mask shape:',mask.shape)
-
-	return mask
+def GetDynSeg(coco_demo, image,image2=None):
+	# h = image.shape[0]
+	# w = image.shape[1]
+	# if len(image.shape) == 2:
+	# 	im = np.zeros((h,w,3))
+	# 	im[:,:,0]=image
+	# 	im[:,:,1]=image
+	# 	im[:,:,2]=image
+	# 	image = im
+	# #if image2 is not None:
+	# #	args+=[image2]
+	# # Run detection
+	# results = model.detect([image], verbose=0)
+	# # Visualize results
+	# r = results[0]
+	# i = 0
+	# mask = np.zeros((h,w))
+	# for roi in r['rois']:
+	# 	if class_names[r['class_ids'][i]] == 'person':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'bicycle':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'car':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'motorcycle':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'airplane':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'bus':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'train':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'truck':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'boat':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'bird':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'cat':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'dog':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'horse':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'sheep':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'cow':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'elephant':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'bear':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'zebra':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	if class_names[r['class_ids'][i]] == 'giraffe':
+	# 		image_m = r['masks'][:,:,i]
+	# 		mask[image_m == 1] = 1.
+	# 	i+=1
+	# #print('GetSeg mask shape:',mask.shape)
+	prediction = coco_demo.compute_prediction(image)
+	top = coco_demo.select_top_predictions(prediction)
+	masks = top.get_field("mask").numpy()
+	h, w, c = image.shape
+	rmask = np.zeros((h, w, 1)).astype(np.bool)
+	for mask in masks:
+		rmask |= mask[0, :, :, None]
+	rmask = rmask.astype(np.uint8)
+	return rmask
 
 im = np.zeros((480,640,3))
+config_file = "/usr/stud/linp/storage/user/maskrcnn-benchmark/configs/caffe2/e2e_mask_rcnn_R_50_FPN_1x_caffe2.yaml"
+# "configs/caffe2/e2e_mask_rcnn_R_50_FPN_1x_caffe2.yaml"
+device = "cuda"
+# update the config options with the config file
+cfg.merge_from_file(config_file)
+# manual override some options
+cfg.merge_from_list(["MODEL.DEVICE", device])
+coco_demo = COCODemo(
+	cfg,
+	min_image_size=800,
+	confidence_threshold=0.7,
+)
 mask = GetDynSeg(im)
 print("Mask R-CNN is correctly working")
 
