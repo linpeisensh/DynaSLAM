@@ -42,6 +42,8 @@ SegmentDynObject::SegmentDynObject(){
     assert(this->py_module != NULL);
     std::cout << this->class_name.c_str() << std::endl;
     this->py_class = PyObject_GetAttrString(this->py_module, this->class_name.c_str());
+    bool ans = this->py_class != NULL;
+    std::cout << ans << std::endl;
     assert(this->py_class != NULL);
     std::cout << "hello world!" << std::endl;
     this->net = PyInstance_New(this->py_class, NULL, NULL);
