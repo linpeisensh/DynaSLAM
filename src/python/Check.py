@@ -158,6 +158,6 @@ coco_demo = COCODemo(
 	min_image_size=800,
 	confidence_threshold=0.7,
 )
-mask = GetDynSeg(im)
+mask = GetDynSeg(coco_demo, im)
 print("Mask R-CNN is correctly working")
 
