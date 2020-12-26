@@ -146,7 +146,7 @@ def GetDynSeg(coco_demo, image,image2=None):
 	return rmask
 
 im = np.zeros((480,640,3))
-config_file = "/usr/stud/linp/storage/user/maskrcnn-benchmark/configs/caffe2/e2e_mask_rcnn_R_50_FPN_1x_caffe2.yaml"
+config_file = "/usr/stud/linp/storage/user/linp/maskrcnn-benchmark/configs/caffe2/e2e_mask_rcnn_R_50_FPN_1x_caffe2.yaml"
 # "configs/caffe2/e2e_mask_rcnn_R_50_FPN_1x_caffe2.yaml"
 device = "cuda"
 # update the config options with the config file
