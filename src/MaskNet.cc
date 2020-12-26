@@ -33,6 +33,7 @@ SegmentDynObject::SegmentDynObject(){
     std::string x;
     setenv("PYTHONPATH", this->py_path.c_str(), 1);
     x = getenv("PYTHONPATH");
+    cout << x << endl;
     Py_Initialize();
     this->cvt = new NDArrayConverter();
     cout << this->module_name.c_str() << endl;
