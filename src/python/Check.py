@@ -135,6 +135,7 @@ def GetDynSeg(coco_demo, image,image2=None):
 	# 		mask[image_m == 1] = 1.
 	# 	i+=1
 	# #print('GetSeg mask shape:',mask.shape)
+	image = image.astype(np.uint8)
 	prediction = coco_demo.compute_prediction(image)
 	top = coco_demo.select_top_predictions(prediction)
 	masks = top.get_field("mask").numpy()
