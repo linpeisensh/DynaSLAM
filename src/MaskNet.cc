@@ -30,16 +30,17 @@ void tocsv(){U_SEGSt(t2sv);}
 SegmentDynObject::SegmentDynObject(){
     std::cout << "Importing Mask R-CNN Settings..." << std::endl;
     ImportSettings();
-//    std::string x;
-//    setenv("PYTHONPATH", this->py_path.c_str(), 1);
-//    x = getenv("PYTHONPATH");
-//    cout << x << endl;
+    std::cout << "hello world!" << std::endl;
+    std::string x;
+    setenv("PYTHONPATH", this->py_path.c_str(), 1);
+    x = getenv("PYTHONPATH");
+    std::cout << x << std::endl;
     Py_Initialize();
     this->cvt = new NDArrayConverter();
-    cout << this->module_name.c_str() << endl;
+    std::cout << this->module_name.c_str() << std::endl;
     this->py_module = PyImport_ImportModule(this->module_name.c_str());
     assert(this->py_module != NULL);
-    cout << this->class_name.c_str() << endl;
+    std::cout << this->class_name.c_str() << std::endl;
     this->py_class = PyObject_GetAttrString(this->py_module, this->class_name.c_str());
     assert(this->py_class != NULL);
     this->net = PyInstance_New(this->py_class, NULL, NULL);
