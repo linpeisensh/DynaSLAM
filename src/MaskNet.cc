@@ -47,8 +47,8 @@ SegmentDynObject::SegmentDynObject(){
     std::cout << "1!" << std::endl;
     assert(this->py_class != NULL);
     std::cout << "2" << std::endl;
-//    this->net = PyInstance_New(this->py_class, NULL, NULL);
-    this->net = PyInstanceMethod_New(this->py_class);
+    this->net = PyInstance_New(this->py_class, NULL, NULL);
+//    this->net = PyInstanceMethod_New(this->py_class);
     std::cout << "3" << std::endl;
     assert(this->net != NULL);
     std::cout << "Creating net instance..." << std::endl;
