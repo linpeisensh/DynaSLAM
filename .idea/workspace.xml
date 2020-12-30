@@ -19,11 +19,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MaskNet.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+            <state relative-caret-position="241">
+              <caret line="39" column="56" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -54,17 +54,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/python/MaskRCNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="19" column="10" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="10" />
+            <state relative-caret-position="228">
+              <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/python/Check.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2337">
-              <caret line="137" column="34" selection-start-line="137" selection-start-column="34" selection-end-line="137" selection-end-column="34" />
+            <state relative-caret-position="553">
+              <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -142,11 +142,11 @@
         <option value="$PROJECT_DIR$/src/Tracking.cc" />
         <option value="$PROJECT_DIR$/src/Frame.cc" />
         <option value="$PROJECT_DIR$/Examples/Stereo/stereo_kitti.cc" />
-        <option value="$PROJECT_DIR$/src/python/Check.py" />
         <option value="$PROJECT_DIR$/include/MaskNet.h" />
         <option value="$PROJECT_DIR$/Examples/RGB-D/MaskSettings.yaml" />
-        <option value="$PROJECT_DIR$/src/python/MaskRCNN.py" />
         <option value="$PROJECT_DIR$/src/MaskNet.cc" />
+        <option value="$PROJECT_DIR$/src/python/MaskRCNN.py" />
+        <option value="$PROJECT_DIR$/src/python/Check.py" />
       </list>
     </option>
   </component>
@@ -205,12 +205,12 @@
       <option name="presentableId" value="Default" />
       <updated>1608487661608</updated>
       <workItem from="1608487663413" duration="46423000" />
-      <workItem from="1609104800127" duration="1954000" />
+      <workItem from="1609104800127" duration="3027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48377000" />
+    <option name="totallyTimeSpent" value="49450000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -377,16 +377,6 @@
     <entry file="file://$PROJECT_DIR$/src/Geometry.cc">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/python/Check.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2337">
-          <caret line="137" column="34" selection-start-line="137" selection-start-column="34" selection-end-line="137" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Initializer.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6346">
@@ -425,17 +415,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/python/MaskRCNN.py">
+    <entry file="file://$PROJECT_DIR$/src/MaskNet.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="10" />
+        <state relative-caret-position="241">
+          <caret line="39" column="56" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MaskNet.cc">
+    <entry file="file://$PROJECT_DIR$/src/python/MaskRCNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+        <state relative-caret-position="228">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/python/Check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

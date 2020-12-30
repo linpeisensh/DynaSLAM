@@ -10,15 +10,14 @@ import matplotlib.pyplot as plt
 # import coco
 # import utils
 # import model as modellib
+import src.python.MaskRCNN as net
 
 from maskrcnn_benchmark.config import cfg
 from demo.predictor import COCODemo
 
 print('Initializing Mask RCNN network...')
 # Root directory of the project
-ROOT_DIR = os.getcwd()
 ROOT_DIR = "./src/python"
-print(ROOT_DIR)
 
 # Directory to save logs and trained model
 MODEL_DIR = os.path.join(ROOT_DIR, "logs")
@@ -147,18 +146,19 @@ def GetDynSeg(coco_demo, image,image2=None):
 	return rmask
 
 im = np.zeros((480,640,3))
-config_file = "/usr/stud/linp/storage/user/linp/maskrcnn-benchmark/configs/caffe2/e2e_mask_rcnn_R_50_FPN_1x_caffe2.yaml"
+# config_file = "/usr/stud/linp/storage/user/linp/maskrcnn-benchmark/configs/caffe2/e2e_mask_rcnn_R_50_FPN_1x_caffe2.yaml"
 # "configs/caffe2/e2e_mask_rcnn_R_50_FPN_1x_caffe2.yaml"
 device = "cuda"
+model = net.Mask(device)
 # update the config options with the config file
-cfg.merge_from_file(config_file)
-# manual override some options
-cfg.merge_from_list(["MODEL.DEVICE", device])
-coco_demo = COCODemo(
-	cfg,
-	min_image_size=800,
-	confidence_threshold=0.7,
-)
-mask = GetDynSeg(coco_demo, im)
+# cfg.merge_from_file(config_file)
+# # manual override some options
+# cfg.merge_from_list(["MODEL.DEVICE", device])
+# coco_demo = COCODemo(
+# 	cfg,
+# 	min_image_size=800,
+# 	confidence_threshold=0.7,
+# )
+mask = model.GetDynSeg(im)
 print("Mask R-CNN is correctly working")
 
