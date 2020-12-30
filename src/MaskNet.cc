@@ -38,6 +38,8 @@ SegmentDynObject::SegmentDynObject(){
     PyRun_SimpleString("print('Python Start')");
     PyRun_SimpleString("import sys");
     PyRun_SimpleString("sys.path.append('./src/python/')");
+    PyRun_SimpleString("from maskrcnn_benchmark.config import cfg");
+    PyRun_SimpleString("from demo.predictor import COCODemo");
     this->cvt = new NDArrayConverter();
     this->py_module = PyImport_ImportModule("MaskRCNN");
     std::cout << "hello world!" << std::endl;
