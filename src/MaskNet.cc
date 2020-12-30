@@ -30,19 +30,19 @@ void tocsv(){U_SEGSt(t2sv);}
 SegmentDynObject::SegmentDynObject(){
     std::cout << "Importing Mask R-CNN Settings..." << std::endl;
     ImportSettings();
-    std::cout << "hello world!" << std::endl;
-    std::string x;
-    setenv("PYTHONPATH", this->py_path.c_str(), 1);
-    x = getenv("PYTHONPATH");
-    std::cout << x << std::endl;
+//    std::string x;
+//    setenv("PYTHONPATH", this->py_path.c_str(), 1);
+//    x = getenv("PYTHONPATH");
+//    std::cout << x << std::endl;
     Py_Initialize();
     PyRun_SimpleString("print('Python Start')");
     PyRun_SimpleString("import sys");
     PyRun_SimpleString("sys.path.append('./src/python/')");
     this->cvt = new NDArrayConverter();
-    std::cout << this->module_name.c_str() << std::endl;
-    this->py_module = PyImport_ImportModule(this->module_name.c_str());
+    this->py_module = PyImport_ImportModule("MaskRCNN");
+    std::cout << "hello world!" << std::endl;
     assert(this->py_module != NULL);
+    std::cout << "hello world!" << std::endl;
     PyObject *pDict = PyModule_GetDict(this->py_module);
     std::cout << "0" << std::endl;
 //    this->py_class = PyDict_GetItemString(pyDict, this->class_name.c_str());
