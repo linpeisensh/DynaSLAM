@@ -30,16 +30,16 @@ void tocsv(){U_SEGSt(t2sv);}
 SegmentDynObject::SegmentDynObject(){
     std::cout << "Importing Mask R-CNN Settings..." << std::endl;
     ImportSettings();
-    std::string x;
-    setenv("PYTHONPATH", this->py_path.c_str(), 1);
-    x = getenv("PYTHONPATH");
-    std::cout << x << std::endl;
+//    std::string x;
+//    setenv("PYTHONPATH", this->py_path.c_str(), 1);
+//    x = getenv("PYTHONPATH");
+//    std::cout << x << std::endl;
     Py_Initialize();
-//    PyRun_SimpleString("print('Python Start')");
-//    PyRun_SimpleString("import sys");
-//    PyRun_SimpleString("sys.path.append('./src/python/')");
-//    PyRun_SimpleString("from maskrcnn_benchmark.config import cfg");
-//    PyRun_SimpleString("from demo.predictor import COCODemo");
+    PyRun_SimpleString("print('Python Start')");
+    PyRun_SimpleString("import sys");
+    PyRun_SimpleString("sys.path.append('./src/python/')");
+    PyRun_SimpleString("from maskrcnn_benchmark.config import cfg");
+    PyRun_SimpleString("from demo.predictor import COCODemo");
     this->cvt = new NDArrayConverter();
     this->py_module = PyImport_ImportModule("MaskRCNN");
     std::cout << "hello world!" << std::endl;
