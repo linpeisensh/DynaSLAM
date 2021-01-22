@@ -13,65 +13,71 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Examples/Stereo/stereo_kitti.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="66" column="42" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="42" />
+            <state relative-caret-position="279">
+              <caret line="149" column="4" selection-start-line="149" selection-start-column="4" selection-end-line="149" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Examples/Stereo/KITTI00-02.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Initializer.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6346">
+              <caret line="334" column="25" selection-start-line="334" selection-start-column="22" selection-end-line="334" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MaskNet.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+            <state relative-caret-position="1330">
+              <caret line="70" column="43" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Examples/RGB-D/MaskSettings.yaml">
+        <entry file="file://$PROJECT_DIR$/include/MaskNet.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="23" />
+            <state relative-caret-position="323">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/t.cc">
+        <entry file="file://$PROJECT_DIR$/src/Tracking.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="11932">
+              <caret line="628" column="43" selection-start-line="628" selection-start-column="28" selection-end-line="628" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/python/model.py">
+        <entry file="file://$PROJECT_DIR$/src/Optimizer.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="1640" column="38" selection-start-line="1640" selection-start-column="36" selection-end-line="1640" selection-end-column="38" />
-              <folding>
-                <element signature="e#183#192#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="7315">
+              <caret line="385" column="24" selection-start-line="385" selection-start-column="18" selection-end-line="385" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/python/Check.py">
+        <entry file="file://$PROJECT_DIR$/src/ORBmatcher.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" selection-start-column="9" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/python/MaskRCNN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="25764">
+              <caret line="1356" column="36" selection-start-line="1356" selection-start-column="26" selection-end-line="1356" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -87,20 +93,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>LightTrack</find>
-      <find>mbVO</find>
-      <find>LightTrackWithMotionModel</find>
-      <find>ORBmatcher</find>
-      <find>SearchByProjection</find>
-      <find>PoseOptimization</find>
-      <find>MapPoint</find>
-      <find>mvbOutlier</find>
-      <find>Frame(</find>
-      <find>size_t</find>
-      <find>mvpMapPoints</find>
-      <find>Grab</find>
-      <find>cv::ero</find>
-      <find>Frame</find>
       <find>mask</find>
       <find>MaskRCNN</find>
       <find>GetSegmentation</find>
@@ -117,6 +109,20 @@
       <find>getStructuringElement</find>
       <find>py_mask_image</find>
       <find>print</find>
+      <find>GetDynSeg</find>
+      <find>model</find>
+      <find>detect</find>
+      <find>toMat</find>
+      <find>type</find>
+      <find>pyObjectFromRefcount</find>
+      <find>refcount</find>
+      <find>import</find>
+      <find>init</find>
+      <find>camera</find>
+      <find>NDArrayConverter</find>
+      <find>2</find>
+      <find>LightTrackWithMotionModel</find>
+      <find>TcwMM</find>
     </findStrings>
     <replaceStrings>
       <replace>std::cout</replace>
@@ -139,10 +145,14 @@
         <option value="$PROJECT_DIR$/src/python/MaskRCNN.py" />
         <option value="$PROJECT_DIR$/src/python/Check.py" />
         <option value="$PROJECT_DIR$/src/MaskNet.cc" />
+        <option value="$PROJECT_DIR$/src/python/Checko.py" />
+        <option value="$PROJECT_DIR$/src/python/MaskRCNNo.py" />
+        <option value="$PROJECT_DIR$/src/Conversion.cc" />
+        <option value="$PROJECT_DIR$/Examples/Stereo/KITTI00-02.yaml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="628" />
     <option name="y" value="1" />
     <option name="width" value="762" />
@@ -153,7 +163,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,18 +173,24 @@
             <path>
               <item name="DynaSLAM" type="b2602c69:ProjectViewProjectNode" />
               <item name="DynaSLAM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DynaSLAM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DynaSLAM" type="462c0819:PsiDirectoryNode" />
+              <item name="Examples" type="462c0819:PsiDirectoryNode" />
+              <item name="Stereo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DynaSLAM" type="b2602c69:ProjectViewProjectNode" />
               <item name="DynaSLAM" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,19 +224,21 @@
       <updated>1608487661608</updated>
       <workItem from="1608487663413" duration="46423000" />
       <workItem from="1609104800127" duration="6056000" />
-      <workItem from="1609768326403" duration="2481000" />
+      <workItem from="1609768326403" duration="20196000" />
+      <workItem from="1610659715474" duration="5554000" />
+      <workItem from="1610992636620" duration="1254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54960000" />
+    <option name="totallyTimeSpent" value="79483000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20896657" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21504559" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -300,38 +317,10 @@
         <state relative-caret-position="-1710" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ORBmatcher.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1754">
-          <caret line="1356" column="36" selection-start-line="1356" selection-start-column="26" selection-end-line="1356" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2977">
-          <caret line="248" column="42" selection-start-line="248" selection-start-column="29" selection-end-line="248" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tracking.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="155" column="19" selection-start-line="155" selection-start-column="18" selection-end-line="155" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Frame.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="76" column="62" lean-forward="true" selection-start-line="76" selection-start-column="62" selection-end-line="76" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Optimizer.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-785">
-          <caret line="385" column="24" selection-start-line="385" selection-start-column="18" selection-end-line="385" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -354,53 +343,13 @@
         <state relative-caret-position="-399" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Converter.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1388" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RegionProps.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2736" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Conversion.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4104">
-          <caret line="216" column="13" selection-start-line="216" selection-start-column="13" selection-end-line="216" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Geometry.cc">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Initializer.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6346">
-          <caret line="334" column="25" selection-start-line="334" selection-start-column="22" selection-end-line="334" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/MaskNet.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/Stereo/stereo_kitti.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="66" column="42" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Examples/RGB-D/MaskSettings.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/t.cc">
       <provider selected="true" editor-type-id="text-editor">
@@ -419,23 +368,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/python/Check.py">
+    <entry file="file://$PROJECT_DIR$/src/python/MaskRCNNl.py" />
+    <entry file="file://$PROJECT_DIR$/src/python/Checko.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        <state relative-caret-position="369">
+          <caret line="131" column="19" selection-start-line="131" selection-start-column="19" selection-end-line="131" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/python/MaskRCNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/python/MaskRCNNl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="586">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="17" />
           <folding>
             <element signature="e#40#49#0" expanded="true" />
           </folding>
@@ -444,18 +391,130 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/python/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="1640" column="38" selection-start-line="1640" selection-start-column="36" selection-end-line="1640" selection-end-column="38" />
+        <state relative-caret-position="-346">
+          <caret line="2216" column="26" selection-start-line="2216" selection-start-column="20" selection-end-line="2216" selection-end-column="26" />
           <folding>
             <element signature="e#183#192#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/RGB-D/MaskSettings.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Converter.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2402" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="488" column="34" selection-start-line="488" selection-start-column="28" selection-end-line="488" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Conversion.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3875">
+          <caret line="211" column="1" lean-forward="true" selection-start-line="211" selection-start-column="1" selection-end-line="211" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/python/MaskRCNNo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Conversion.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/python/Check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="132" column="39" lean-forward="true" selection-start-line="132" selection-start-column="39" selection-end-line="132" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/Stereo/KITTI04-12.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/Stereo/KITTI03.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Initializer.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6346">
+          <caret line="334" column="25" selection-start-line="334" selection-start-column="22" selection-end-line="334" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MaskNet.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        <state relative-caret-position="1330">
+          <caret line="70" column="43" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/MaskNet.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tracking.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11932">
+          <caret line="628" column="43" selection-start-line="628" selection-start-column="28" selection-end-line="628" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Optimizer.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7315">
+          <caret line="385" column="24" selection-start-line="385" selection-start-column="18" selection-end-line="385" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ORBmatcher.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25764">
+          <caret line="1356" column="36" selection-start-line="1356" selection-start-column="26" selection-end-line="1356" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/Stereo/stereo_kitti.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="149" column="4" selection-start-line="149" selection-start-column="4" selection-end-line="149" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Examples/Stereo/KITTI00-02.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>

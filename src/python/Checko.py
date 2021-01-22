@@ -129,5 +129,5 @@ def GetDynSeg(image,image2=None):
 	return mask
 
 im = np.zeros((480,640,3))
-mask = GetDynSeg(im)
+mask = model.detect
 print("Mask R-CNN is correctly working")
